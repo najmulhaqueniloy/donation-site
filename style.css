@@ -47,6 +47,10 @@ body{
     font-family: "Inter", serif;
 }
 
+.text-align{
+    text-align: center;
+}
+
 .section-info{
     max-width: 690px;
     margin: 130px auto 50px;
@@ -82,6 +86,42 @@ main{
     max-width: 1440px;
     margin: 0 auto;
 }
+
+/* Donate related styles */
+.donate-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 22px;
+    max-width: 790px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.donate-amount{
+    background-color: #FAFAFA;
+    border-radius: 5px;
+    padding: 63px 22px;
+    color: #707070;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+.donate-amount:focus{
+    background-color: #ffeeee;
+    border: 1px solid #FF5959;
+    color: #FF5959;
+}
+#taka{
+    padding: 20px 50px;
+    color: #B3B3B3;
+    font-size: 1.125rem;
+    border: none;
+    border-bottom: 1px solid #AA9F9F;
+}
+/* #taka:focus{
+    outline: none;
+} */
+
 
 /* Donate Plane related styles */
 .plan-title{
@@ -186,6 +226,9 @@ main{
     }
     .header-content{
         padding: 10px;
+    }
+    .donate-container{
+        grid-template-columns: repeat(2, 1fr);
     }
     .survive-area{
         padding: 30px;
