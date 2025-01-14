@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", serif;
+}
+
+/* Shared Styles */
+
+.dark-1{
+    color: #121212;
+}
+.dark-2{
+    color: #707070;
+}
+.dark-3{
+    color: #B3B3B3;
+}
+.pinku{
+   color: #FF5959; 
+}
+
+.title{
+    font-family: "Inter", serif;
+    font-size: 2.8125rem;
+    font-weight: bold;
+    color: rgba(18, 18, 18, 1);
+}
+
+.description{
+    font-size: 1.125rem;
+    color: rgba(112, 112, 112, 1);
+    margin-top: 20px;
+    line-height: 28px;
+}
+
+.primary-btn{
+    background-color: #FF5959;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 1.25rem;
+    color: #fff;
+    font-family: "Inter", serif;
+}
+
+.section-info{
+    max-width: 690px;
+    margin: 130px auto 50px;
+    text-align: center;
+}
+.hide{
+    display: none;
+}
+
+
+/* Header related styles */
+.header-area{
+    background-image: linear-gradient(0.00deg, rgb(18, 18, 18),rgba(18, 18, 18, 0)), url(images/donation1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 175px 0;
+}
+.header-content{
+    color: white;
+    text-align: center;
+    max-width: 826px;
+    margin: auto;
+}
+.heading{
+    font-size: 4.06rem;
+}
+.header-content .description{
+    color: white;
+}
+
+/* Main Section */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Donate Plane related styles */
+.plan-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 30px 0 16px 0;
+}
+.plan-description{
+    font-size: 1rem;
+}
+.plan-container{
+    display: flex;
+    gap: 24px;
+    padding: 0 30px
+}
+.plan-child{
+    padding: 62px 22px 53px 23px;
+    border-radius: 8px;
+}
+.plan-bg-1{
+    background-color: rgba(77, 22, 129, 0.14);
+}
+.plan-bg-2{
+    background-color: rgba(255, 89, 89, 0.15);
+}
+.plan-bg-3{
+    background-color: rgba(255, 238, 89, 0.3);
+}
+
+/* Survive Section styles */
+.survive-area{
+    padding: 0 150px;
+}
+.survive-container{
+    display: flex;
+    margin-top: 130px;
+    gap: 83px;
+    justify-content: space-between;
+    align-items: center;
+}
+.survive-image img{
+    width: 100%;
+}
+
+/* Subscribe section related styles */
+
+.subscribe-area{
+    background-color: #FFF4D6;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 76px 0;
+}
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+}
+#email{
+    background-color: #D9D9D9;
+    color: #AA9F9F;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px 0 0 8px;
+    padding: 20px 0 20px 17px;
+    width: 275px;
+}
+.input-container .input-btn{
+    border: none;
+    background-color: #FF5959;   
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 20px 42px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+
+/* Footer section styles */
+.footer-area{
+    background-color: rgba(11, 13, 23, 1);
+    text-align: center;
+    padding: 43px 0;
+    margin-top: 130px;
+}
+.footer-title{
+    margin-bottom: 24px;
+    font-family: "Lobster", sans-serif;
+    font-size: 36px;
+}
+.last-text{
+    color: #d9dbe1;
+}
+
+
+/* Media Query for small device */
+@media screen and (max-width: 576px) {
+    .plan-container,
+    .survive-container{
+        flex-direction: column;
+    }
+    .header-content{
+        padding: 10px;
+    }
+    .survive-area{
+        padding: 30px;
+    }
+    .flex-reverse{
+        flex-direction: column-reverse;
+    }
+    .section-info{
+        padding: 10px;
+    }
+    .subscribe-area{
+        margin: 0 10px;
+    }
+    #email{
+        width: 175px;
+    }
+}
